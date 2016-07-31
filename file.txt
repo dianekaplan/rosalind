@@ -1,0 +1,6 @@
+>Rosalind_1
+GATTACAT
+>Rosalind_2
+TAGACCAT
+>Rosalind_3
+ATACAT
