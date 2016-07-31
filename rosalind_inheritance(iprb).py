@@ -2,7 +2,7 @@
 # Diane Kaplan
 # Rosalind Problem: inheritance (iprb)
 # http://rosalind.info/problems/iprb/
-# Aug 2, 2015
+# Aug 2, 2015 
 
 # Rules:
 # Given: Three positive integers k, m, and n, representing a population containing k+m+n organisms: 
@@ -12,10 +12,8 @@
 # (and thus displaying the dominant phenotype). Assume that any two organisms can mate.
 
 # That's the same as the probability that we got a dominant allele from one of the two parents
-
-from math import factorial
     
-DEBUG = True
+DEBUG = False
 
 
 def prob_of_offspring_having_dominant(k, m, n):
@@ -32,7 +30,7 @@ def prob_of_offspring_having_dominant(k, m, n):
 
     
     #0) Summary text shows adding the probabilities for the different ways it can happen
-        #a) first is homo dom (TBD%), second is anything (100%)    
+    #a) first is homo dom (TBD%), second is anything (100%)    
     P_homo_dom_first = homo_dom_count/total_count
     
     #b) first is hetero, then...
@@ -56,7 +54,11 @@ def prob_of_offspring_having_dominant(k, m, n):
  
             
     if (DEBUG): 
-        print "we're in debug mode:"
+        print "P_homo_dom_first:", P_homo_dom_first 
+        print "P_hetero_then_homo_dom: ", P_hetero_then_homo_dom 
+        print "P_hetero_hetero_special: ", P_hetero_hetero_special
+        print "P_homo_rec_then_homo_dom: ",  P_homo_rec_then_homo_dom
+        print "P_homo_rec_then_hetero: ", P_homo_rec_then_hetero
 
     return prob_one_parent_homo_dom
 
