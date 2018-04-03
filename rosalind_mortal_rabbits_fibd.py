@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-# Diane Kaplan
+# Diane Kaplan 
 # Rosalind Problem: fibd (mortal fibonacci rabbits)
 # http://rosalind.info/problems/fibd/
 # (starts with the fib problem, plus rabbits die after a certain number of months)
